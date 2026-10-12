@@ -1,0 +1,6 @@
+{
+  "name": "For Piqah Imut Kiutt 🎀",
+  "description": "A sweet, interactive birthday surprise website celebrating Piqah's 16th birthday with memories, heartfelt letters, gifts, and celebration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

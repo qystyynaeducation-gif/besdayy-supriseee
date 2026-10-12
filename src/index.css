@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+.font-rounded {
+  font-family: 'Quicksand', 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Custom delicate scrapbook and celebration animations */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(2deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(244, 114, 182, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(244, 114, 182, 0.65);
+  }
+}
+
+@keyframes candleFlicker {
+  0%, 100% {
+    transform: scale(1) rotate(-1deg);
+    opacity: 0.95;
+  }
+  25% {
+    transform: scale(1.08, 0.95) rotate(1deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.96, 1.05) rotate(-1.5deg);
+    opacity: 0.88;
+  }
+  75% {
+    transform: scale(1.04, 0.98) rotate(0.8deg);
+    opacity: 0.98;
+  }
+}
+
+@keyframes vinylSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+.animate-candle {
+  animation: candleFlicker 1.2s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.animate-vinyl-spin {
+  animation: vinylSpin 8s linear infinite;
+}
+
+/* Scrapbook photo polaroid shadow */
+.polaroid-shadow {
+  box-shadow: 0 10px 25px -5px rgba(236, 72, 153, 0.12), 0 8px 10px -6px rgba(236, 72, 153, 0.08);
+}
+
+.purple-dreamy-glow {
+  box-shadow: 0 12px 35px -5px rgba(168, 85, 247, 0.25), 0 0 25px rgba(192, 132, 252, 0.3);
+}
+
+.envelope-shadow {
+  box-shadow: 0 20px 35px -10px rgba(244, 114, 182, 0.25);
+}
+
+/* Custom delicate pink scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF0F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FBCFE8;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F472B6;
+}
